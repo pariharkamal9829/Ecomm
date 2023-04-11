@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Slider</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="slider">
+            <div class="image">
+                <img src="img/Product-1.png">
+    
+                <div class="Button">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+    
+            <div class="product-details">
+                <div class="product-name">
+                    <a href="#">Round Neck Yellow T-shirt</a>
+                    <span>New Arrival</span>
+                </div>
+                <a href="#" class="price">&#8377;500</a>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="image">
+                <img src="img/Product-2.png">
+    
+                <div class="Button">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+    
+            <div class="product-details">
+                <div class="product-name">
+                    <a href="#">Running Shoes</a>
+                    <span>New Arrival</span>
+                </div>
+                <a href="#" class="price">&#8377;300</a>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="image">
+                <img src="img/Product-3.png">
+    
+                <div class="Button">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+    
+            <div class="product-details">
+                <div class="product-name">
+                    <a href="#">BLACK-CK Analog Watch</a>
+                    <span>New Arrival</span>
+                </div>
+                <a href="#" class="price">&#8377;350</a>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="image">
+                <img src="img/Product-4.png">
+    
+                <div class="Button">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+    
+            <div class="product-details">
+                <div class="product-name">
+                    <a href="#">Dark Blue Track Pants</a>
+                    <span>New Arrival</span>
+                </div>
+                <a href="#" class="price">&#8377;580</a>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="image">
+                <img src="img/Product-5.png">
+    
+                <div class="Button">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+    
+            <div class="product-details">
+                <div class="product-name">
+                    <a href="#">Smart Lace-Ups Shoes</a>
+                    <span>New Arrival</span>
+                </div>
+                <a href="#" class="price">&#8377;250</a>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="image">
+                <img src="img/Product-6.png">
+    
+                <div class="Button">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+    
+            <div class="product-details">
+                <div class="product-name">
+                    <a href="#">CK312 Analog Watch</a>
+                    <span>New Arrival</span>
+                </div>
+                <a href="#" class="price">&#8377;400</a>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="image">
+                <img src="img/Product-7.png">
+    
+                <div class="Button">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+    
+            <div class="product-details">
+                <div class="product-name">
+                    <a href="#">Analog-Digital Watch</a>
+                    <span>New Arrival</span>
+                </div>
+                <a href="#" class="price">&#8377;1000</a>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="image">
+                <img src="img/Product-8.png">
+    
+                <div class="Button">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+    
+            <div class="product-details">
+                <div class="product-name">
+                    <a href="#">Men Light Blue Jeans</a>
+                    <span>New Arrival</span>
+                </div>
+                <a href="#" class="price">&#8377;520</a>
+            </div>
+        </div>
+        </div>
+            <i class="fas fa-chevron-right arrow"></i>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const arrows = document.querySelectorAll(".arrow");
+        const container= document.querySelectorAll(".container");
+
+        arrows.forEach((arrow, i) => {
+            const ItemNo = container[i].querySelectorAll("img").length;
+            let clickitem = 0;
+            arrow.addEventListener("click", () => {
+                clickitem++;
+                if(ItemNo - (5 + clickitem) >= 0){
+                    container[i].style.transform = `translateX(${
+                        container[i].computedStyleMap().get("transform")[0].x.value
+                        - 455}px)`;
+                }else{
+                    container[i].style.transform = "translateX(0)";
+                    clickitem = 0;
+                }
+            });
+        });
+    </script>
+   
+</body>
+</html>

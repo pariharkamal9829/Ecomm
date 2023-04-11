@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1d1e30;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.slider{
+    margin: 25px;
+    width: 350px;
+    background-color: #f02c2c;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.image{
+    position: relative;
+}
+
+.image img{
+    height: 450px;
+    width: 340px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.product-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.product-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name a{
+    color: #fff;
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+span{
+    color: rgb(228, 225, 225);
+}
+
+.price{
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 23px;
+}
+
+.Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 25px;
+   height: 50px;
+   width: 150px;
+   background-color: #f02c2c;
+   color: #fff;
+   font-size: 20px;
+   font-weight: bolder;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #f02c2c;
+    transition: all ease 1s;
+}
+
+.Button{
+    visibility: hidden;
+}
+
+.image:hover .Button{
+    visibility: visible;
+    animation: animation 1s;
+}
+
+@keyframes animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: left;
+    height: 600px;
+    width: 4000px;
+    margin: 10px auto;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow{
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    color: #fff;
+    font-size: 125px;
+    cursor: pointer;
+}
+
+
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="header">
+        <a href="" class="logo">E<span>comm</span></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="cart.html" id="lg-bag"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="user.html" id="lg-user"><i class="fa-solid fa-circle-user"></i></a></li>
+                <a href="" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="user.html"><i class="fa-solid fa-circle-user"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>Contact Us</h2>
+    </section>
+
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Visits our one of our office location or contact us </h2>
+            <h4>Main Office</h4>
+            <div>
+                <li>
+                    <i class="fas fa-map"></i>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <p>xyz750@gmail.com</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+919898989898</p>
+                </li>
+                <li>
+                    <i class="fas fa-clock"></i>
+                    <p>9am - 8pm</p>
+                </li>
+            </div>
+        </div>
+
+        <div class="contact-image">
+            <img src="img/about/20943953.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="Contact-form">
+        <form action="mailto:ayushsolanki979@gmail.com" method="post">
+            <span>LEAVE A MESSAGE</span>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="E-mail">
+            <input type="text" placeholder="Subject">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button class="normal">Submit</button>
+        </form>
+        <div class="owner">
+            <div>
+                <img src="img/founder/james.png" alt="">
+                <p><span>James</span> Founder Of XYZ<br>Phone: +9182273664 <br>Email: xyz7750@gamil.com</p>
+            </div>
+            <div>
+                <img src="img/founder/Gojo.png" alt="">
+                <p><span>Gojo</span> Co-Founder Of XYZ <br>Phone: +9182273664 <br>Email: gojoxy750@gamil.com</p>
+            </div>
+            <div>
+                <img src="img/founder/alex.png" alt="">
+                <p><span>Alex</span> Mananger Of XYZ <br>Phone: +9182273664 <br>Email: Alexyz790@gamil.com</p>
+            </div>
+        </div>
+
+    </section>
+
+    <hr>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <!-- logo -->
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Lorem ipsum dolor sit</p>
+            <br>
+            <p><strong>Phone:</strong>+91875867878</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About us</a>
+            <a href="#">Delivery info</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term & Condition</a>
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="user.html">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track Order</a>
+            <a href="#">Help</a>
+
+        </div>
+
+        <div class="col">
+            <h4>Payment</h4>
+            <p>Secured payment Gateways</p>
+
+        </div>
+
+        <div class="copyright">
+            <p>Copyright 2022 Ayush Solanki</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script >
+        const bar = document.getElementById("bar");
+const close = document.getElementById("close");
+const nav = document.getElementById("navbar");
+const User = document.getElementByName("user.html");
+
+if (bar) {
+  bar.addEventListener("click", () => {
+    nav.classList.add("active");
+  });
+}
+
+if (close) {
+  close.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+}
+
+if (User) {
+  User.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+}
+    </script>
+
+</body>
+
+</html>
